@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ::ffff:127.0.0.1 - - [31/Oct/2018:02:00:23 +0000] "POST /live2d HTTP/1.1" 200 2380 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
 ::ffff:127.0.0.1 - - [31/Oct/2018:02:00:23 +0000] "POST /my HTTP/1.1" 200 271 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
 ::ffff:127.0.0.1 - - [31/Oct/2018:02:01:36 +0000] "POST /live2d HTTP/1.1" 200 2380 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
@@ -316,3 +317,5 @@
 ::ffff:127.0.0.1 - - [31/Oct/2018:09:48:34 +0000] "POST /live2d HTTP/1.1" 200 2380 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
 ::ffff:127.0.0.1 - - [31/Oct/2018:09:50:09 +0000] "POST /live2d HTTP/1.1" 200 2380 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
 ::ffff:127.0.0.1 - - [31/Oct/2018:09:56:55 +0000] "POST /live2d HTTP/1.1" 200 2380 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
+=======
+>>>>>>> 6854eeb3547fa9d7d9c0a529830fe6cc4b805df6

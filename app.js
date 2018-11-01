@@ -1,9 +1,9 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var fs = require('fs');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const fs = require('fs');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -11,9 +11,9 @@ var live2dRouter = require('./routes/live2d');
 var aWordRouter = require('./routes/aWord');
 var db = require('./utils/mongDB')
 
-var app = express();
+const app = express();
 
-var accessLogStream = fs.createWriteStream(path.join(__dirname, 'logs/access.log'), { flag: 'a' }); //创建一个写文件流，并且保存在当前文件夹的access.log文件中
+const accessLogStream = fs.createWriteStream(path.join(__dirname, 'logs/access.log'), { flag: 'a' }); //创建一个写文件流，并且保存在当前文件夹的access.log文件中
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
