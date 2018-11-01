@@ -7,7 +7,8 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var live2dRouter = require('./routes/live2d')
+var live2dRouter = require('./routes/live2d');
+var aWordRouter = require('./routes/aWord');
 var db = require('./utils/mongDB')
 
 var app = express();
@@ -25,13 +26,24 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(function (req, res, next) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Content-Length, Authorization, Accept,X-Requested-With,token');
+    res.setHeader('Access-Control-Allow-Methods', 'PUT,POST,GET,DELETE,OPTIONS');
+    //res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Access-Control-Allow-Credentials', 'true');
+    if (req.method === 'OPTIONS') {
+        return res.status(200).send('202')
+    }
+    next();
+});
 app.use('/', (req, res, next) => {
     next()
 });
 app.use('/my', indexRouter);
 app.use('/users', usersRouter);
 app.use('/live2d', live2dRouter);
+app.use('/aWord', aWordRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
